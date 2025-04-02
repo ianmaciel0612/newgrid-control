@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja de Carros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 70px;
+            justify-content: center;
+        }
+        .car-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100%;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .car-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .car-card h3 {
+            margin: 8px 0;
+        }
+        .car-card p {
+            font-weight: bold;
+            color: #333;
+        }
+        .car-card:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .about {
+            padding: 40px;
+            background: #eee;
+        }
+        .cta {
+            background: #2c2b2b;
+            color: white;
+            padding: 40px;
+        }
+        .cta button {
+            background: #ff6600;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .cta button:hover {
+            background: #e65c00;
+            transform: scale(1.05);
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+        @media (max-width: 900px) {
+            .car-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+        @media (max-width: 600px) {
+            .car-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">STAR CAR</div>
+    <div class="container">
+        <h2>Os melhores carros para você</h2>
+        <div class="car-grid">
+            <div class="car-card"><img src="img/corolla.webp" alt="Toyota Corolla 2018"><h3>TOYOTA COROLLA 2018</h3><p>Preço: R$ 150.000</p></div>
+            <div class="car-card"><img src="img/ferrari.webp" alt="Ferrari Spider 2015"><h3>FERRARI SPIDER 2015</h3><p>Preço: R$ 3.000.000</p></div>
+            <div class="car-card"><img src="img/m3.png" alt="BMW M3 2017"><h3>BMW M3 2017</h3><p>Preço: R$ 600.000</p></div>
+            <div class="car-card"><img src="img/g10.jpg" alt="Honda Civic G10 2017"><h3>HONDA CIVIC G10 2017</h3><p>Preço: R$ 150.000</p></div>
+            <div class="car-card"><img src="img/porshe 911.webp" alt="Porsche 911 2018"><h3>PORSCHE 911 2018</h3><p>Preço: R$ 2.000.000</p></div>
+            <div class="car-card"><img src="img/images.jpg" alt="Audi RS6 2015"><h3>AUDI RS6 2015</h3><p>Preço: R$ 1.500.000</p></div>
+            <div class="car-card"><img src="img/hilux.webp" alt="Toyota Hilux 2017"><h3>TOYOTA HILUX 2017</h3><p>Preço: R$ 600.000</p></div>
+            <div class="car-card"><img src="img/polo.png" alt="Volkswagen Polo GTI"><h3>VOLKSWAGEN POLO GTI</h3><p>Preço: R$ 120.000</p></div>
+            <div class="car-card"><img src="img/g63.jpg" alt="Mercedes AMG G63 2017"><h3>MERCEDES AMG G63 2017</h3><p>Preço: R$ 3.000.000</p></div>
+        </div>
+    </div>
+    <section class="about">
+        <h2>Sobre Nós</h2>
+        <p>A <strong>StarCar</strong> é uma revendedora de veículos focada em oferecer os melhores carros com qualidade e procedência garantida.<br>Venha conhecer nosso showroom e faça um test drive! 🚗✨</p>
+    </section>
+    <section class="cta">
+        <h2>Entre em Contato</h2>
+        <button>FALE CONOSCO</button>
+    </section>
+    <footer class="footer">©️ 2025 Minha Loja de Carros</footer>
+</body>
+</html>
